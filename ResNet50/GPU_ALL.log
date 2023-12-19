@@ -1,0 +1,110 @@
+Files already downloaded and verified
+Baseline Training Time on cuda: 33.329270362854004 seconds
+
+Number of Workers in DataLoader: 0
+Pin Memory in DataLoader: True
+Optimized Data Loading Time with 0 workers: 21.909396648406982 seconds
+
+Number of Workers in DataLoader: 2
+Pin Memory in DataLoader: True
+Optimized Data Loading Time with 2 workers: 17.117499351501465 seconds
+
+Number of Workers in DataLoader: 4
+Pin Memory in DataLoader: True
+Optimized Data Loading Time with 4 workers: 16.605206966400146 seconds
+
+Number of Workers in DataLoader: 8
+Pin Memory in DataLoader: True
+Optimized Data Loading Time with 8 workers: 16.728546142578125 seconds
+
+Baseline Training Time on cuda: 22.051915407180786 seconds
+
+Training Time with Mixed-Precision on cuda: 20.276132583618164 seconds
+
+Baseline Training Time on cuda: 22.69991374015808 seconds
+
+Training Time with Learning Rate Scheduling on cuda: 16.761512517929077 seconds
+
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                                   Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg    # of Calls  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                        model_inference         2.09%        1.598s       100.00%       76.305s       76.305s             1  
+                                   DataParallel.forward        58.96%       44.993s        77.42%       59.076s      75.544ms           782  
+enumerate(DataLoader)#_SingleProcessDataLoaderIter._...        13.33%       10.173s        20.15%       15.372s      19.632ms           783  
+                                  cudaFuncGetAttributes         8.60%        6.566s         9.53%        7.272s       1.039ms          7001  
+                                              Broadcast        -4.37%  -3332541.000us         8.86%        6.760s       8.644ms           782  
+                          aten::unflatten_dense_tensors         2.70%        2.061s         5.84%        4.459s     190.051us         23460  
+                                       cudaLaunchKernel         5.18%        3.954s         5.24%        4.002s       5.533us        723311  
+                                           aten::narrow         1.06%     811.884ms         3.11%        2.373s       3.145us        754630  
+                                               aten::to         0.35%     263.584ms         2.50%        1.907s       7.489us        254694  
+                                         aten::_to_copy         0.79%     604.538ms         2.23%        1.705s      11.078us        153910  
+                                            aten::slice         2.05%        1.563s         2.05%        1.568s       2.078us        754631  
+                                            aten::copy_         1.20%     914.465ms         1.60%        1.219s       4.743us        257038  
+                                            aten::clone         0.53%     401.509ms         1.55%        1.186s      11.862us        100000  
+                                              aten::div         0.77%     583.856ms         1.12%     852.661ms      17.053us         50000  
+                            aten::flatten_dense_tensors         0.58%     440.992ms         1.11%     849.162ms     108.588us          7820  
+                                       aten::contiguous         0.07%      52.342ms         0.95%     723.410ms      14.468us         50000  
+                                              aten::cat         0.63%     484.115ms         0.91%     694.614ms      80.750us          8602  
+                                    aten::empty_strided         0.84%     638.447ms         0.84%     638.888ms       3.133us        203910  
+                                               aten::eq         0.40%     308.163ms         0.79%     604.539ms      12.091us         50000  
+                                                Scatter         0.05%      40.336ms         0.68%     515.375ms     659.047us           782  
+                                              aten::any         0.50%     383.572ms         0.51%     389.554ms       7.791us         50000  
+                                            aten::empty         0.42%     322.579ms         0.43%     329.538ms       1.883us        175028  
+                                            aten::stack         0.02%      14.515ms         0.42%     319.229ms     408.221us           782  
+                                             aten::view         0.40%     301.847ms         0.40%     301.847ms       0.236us       1277644  
+                                       cudaHostRegister         0.36%     273.831ms         0.38%     292.003ms       5.407ms            54  
+                                          aten::permute         0.27%     208.341ms         0.34%     258.703ms       5.174us         50000  
+                                                 Gather         0.08%      59.900ms         0.30%     231.793ms     296.410us           782  
+                                       aten::empty_like         0.15%     113.310ms         0.28%     214.841ms       4.297us         50000  
+                                        cudaMemcpyAsync         0.27%     206.576ms         0.27%     206.580ms      28.949us          7136  
+                                             aten::sub_         0.26%     197.411ms         0.26%     197.411ms       3.948us         50000  
+                                       aten::is_nonzero         0.08%      63.835ms         0.21%     159.098ms       3.182us         50000  
+                                          cudaHostAlloc         0.14%     106.797ms         0.20%     154.164ms       9.635ms            16  
+                                             aten::div_         0.19%     144.276ms         0.19%     144.276ms       2.886us         50000  
+                                          aten::view_as         0.17%     130.412ms         0.18%     140.082ms       1.113us        125902  
+                                    cudaLaunchKernelExC         0.14%     108.863ms         0.14%     108.863ms       3.480us         31280  
+                                             aten::item         0.13%     101.980ms         0.14%     105.590ms       2.112us         50002  
+          cudaOccupancyMaxActiveBlocksPerMultiprocessor         0.10%      78.003ms         0.10%      79.413ms       0.943us         84255  
+                                       aten::as_strided         0.08%      62.257ms         0.08%      62.257ms       0.073us        857759  
+                                             cudaMalloc         0.07%      53.733ms         0.07%      56.168ms     303.611us           185  
+                                  cudaStreamSynchronize         0.07%      56.149ms         0.07%      56.149ms      35.718us          1572  
+                                               cudaFree         0.04%      29.707ms         0.06%      42.457ms       2.235ms            19  
+                                    cudaStreamWaitEvent         0.05%      40.678ms         0.05%      40.678ms       0.565us         72020  
+                                  cudaStreamGetPriority         0.03%      25.216ms         0.03%      25.243ms       0.076us        331549  
+                                            aten::chunk         0.00%       3.291ms         0.03%      23.274ms      29.762us           782  
+                                            aten::split         0.01%       7.637ms         0.03%      20.729ms      26.508us           782  
+                             cudaDeviceEnablePeerAccess         0.02%      17.945ms         0.02%      17.945ms       2.991ms             6  
+                                  cudaStreamIsCapturing         0.02%      13.756ms         0.02%      13.794ms       0.042us        331665  
+                                 aten::split_with_sizes         0.01%      11.174ms         0.02%      12.061ms      15.423us           782  
+                       cudaDeviceGetStreamPriorityRange         0.01%      10.501ms         0.01%      10.547ms       0.032us        331540  
+                              cudaStreamCreateWithFlags         0.01%       7.289ms         0.01%       7.342ms     100.575us            73  
+cudaOccupancyMaxActiveBlocksPerMultiprocessorWithFla...         0.01%       6.528ms         0.01%       6.895ms       0.315us         21878  
+                                   cudaGetSymbolAddress         0.01%       5.638ms         0.01%       6.247ms       2.082ms             3  
+                              aten::_local_scalar_dense         0.01%       4.544ms         0.01%       4.544ms       0.091us         50002  
+                                         aten::randperm         0.00%       1.733ms         0.00%       3.492ms     873.000us             4  
+                            cudaStreamGetCaptureInfo_v2         0.00%       2.423ms         0.00%       2.423ms       0.077us         31280  
+                               cudaHostGetDevicePointer         0.00%       1.859ms         0.00%       1.859ms      30.983us            60  
+                                          aten::detach_         0.00%       1.614ms         0.00%       1.858ms       2.376us           782  
+                                       aten::lift_fresh         0.00%       1.731ms         0.00%       1.731ms       0.011us        150782  
+                                 cudaDeviceGetAttribute         0.00%     830.000us         0.00%     830.000us       5.188us           160  
+                             cudaGetDeviceProperties_v2         0.00%     736.000us         0.00%     736.000us     184.000us             4  
+                                        cudaMemsetAsync         0.00%     666.000us         0.00%     668.000us       0.021us         31332  
+                                                detach_         0.00%     331.000us         0.00%     331.000us       0.423us           782  
+                                   cudaFuncSetAttribute         0.00%     284.000us         0.00%     284.000us       0.040us          7135  
+                                            aten::fill_         0.00%     174.000us         0.00%     174.000us       0.003us         50000  
+                                  cudaDeviceGetPCIBusId         0.00%      39.000us         0.00%      56.000us      18.667us             3  
+                                cudaDeviceCanAccessPeer         0.00%      35.000us         0.00%      35.000us       5.833us             6  
+                    cudaThreadExchangeStreamCaptureMode         0.00%      26.000us         0.00%      26.000us       0.149us           175  
+                                      cudaStreamDestroy         0.00%      22.000us         0.00%      22.000us       5.500us             4  
+                                          aten::random_         0.00%      20.000us         0.00%      20.000us      10.000us             2  
+                                           aten::detach         0.00%       5.000us         0.00%      13.000us       6.500us             2  
+                                                 detach         0.00%       8.000us         0.00%       8.000us       4.000us             2  
+                                    aten::scalar_tensor         0.00%       6.000us         0.00%       6.000us       3.000us             2  
+                                   cudaDriverGetVersion         0.00%       5.000us         0.00%       5.000us       0.278us            18  
+                                          aten::resize_         0.00%       1.000us         0.00%       1.000us       0.250us             4  
+                                     aten::resolve_conj         0.00%       0.000us         0.00%       0.000us       0.000us             2  
+                                      aten::resolve_neg         0.00%       0.000us         0.00%       0.000us       0.000us             2  
+                                     cudaGetDeviceCount         0.00%       0.000us         0.00%       0.000us       0.000us             5  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  
+Self CPU time total: 76.305s
+

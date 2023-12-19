@@ -1,0 +1,13 @@
+Initial GPU Memory Usage: 0.09509888 GB
+I/O Time: 7.514127016067505 seconds
+
+Initial GPU Memory Usage: 0.09509888 GB
+I/O Time: 7.757685422897339 seconds
+
+GPU Memory Usage after optimizations: 0.307297792 GB
+Training Time with Optimizations: 60.51323127746582 seconds
+Inference Time with Optimizations: 7.358635902404785 seconds
+
+GPU Memory Usage after optimizations: 0.307297792 GB
+Training Time with Optimizations: 63.93648362159729 seconds
+Inference Time with Optimizations: 6.335159778594971 seconds

@@ -1,0 +1,7 @@
+Files already downloaded and verified
+Baseline Training Time on cuda: 37.13820505142212 seconds
+
+Number of Workers in DataLoader: 4
+Pin Memory in DataLoader: True
+Baseline Data Loading Time: 19028.72216129303 seconds
+Optimized Data Loading Time: 13781.694490909576 seconds

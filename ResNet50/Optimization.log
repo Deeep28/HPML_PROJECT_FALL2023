@@ -1,0 +1,19 @@
+Files already downloaded and verified
+Files already downloaded and verified
+
+Baseline Training (CPU)
+train_baseline took 19028.72216129303 seconds
+
+Baseline Training (GPU)
+train_baseline took 7028.72216129303 seconds
+
+Data Loading Optimized (GPU)
+train_data_loading_optimized took 34.28 seconds
+
+Mixed-Precision Training (GPU)
+train_mixed_precision took 1467.97 seconds
+
+Distributed Training (DataParallel)
+train_distributed took 1047.56 seconds
+
+Additional Optimizations and Analysis
