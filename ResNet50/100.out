@@ -1,0 +1,48 @@
+Defaulting to user installation because normal site-packages is not writeable
+Collecting scikit-learn
+  Downloading scikit_learn-1.3.2-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.1 MB)
+Collecting joblib>=1.1.1
+  Downloading joblib-1.3.2-py3-none-any.whl (302 kB)
+Collecting threadpoolctl>=2.0.0
+  Downloading threadpoolctl-3.2.0-py3-none-any.whl (15 kB)
+Requirement already satisfied: numpy<2.0,>=1.17.3 in /share/apps/python/3.8.6/intel/lib/python3.8/site-packages/numpy-1.19.2-py3.8-linux-x86_64.egg (from scikit-learn) (1.19.2)
+Requirement already satisfied: scipy>=1.5.0 in /share/apps/python/3.8.6/intel/lib/python3.8/site-packages/scipy-1.5.2-py3.8-linux-x86_64.egg (from scikit-learn) (1.5.2)
+Installing collected packages: joblib, threadpoolctl, scikit-learn
+Successfully installed joblib-1.3.2 scikit-learn-1.3.2 threadpoolctl-3.2.0
+WARNING: You are using pip version 20.2.3; however, version 23.3.1 is available.
+You should consider upgrading via the '/share/apps/python/3.8.6/intel/bin/python -m pip install --upgrade pip' command.
+Downloading https://www.cs.toronto.edu/~kriz/cifar-100-python.tar.gz to ./cifar-100-python.tar.gz
+  0%|          | 0/169001437 [00:00<?, ?it/s]  1%|          | 1900544/169001437 [00:00<00:08, 18985496.26it/s]  8%|▊         | 12877824/169001437 [00:00<00:02, 72323552.29it/s] 14%|█▍        | 24281088/169001437 [00:00<00:01, 91313579.84it/s] 21%|██        | 35651584/169001437 [00:00<00:01, 100085274.65it/s] 28%|██▊       | 47251456/169001437 [00:00<00:01, 105798656.16it/s] 35%|███▍      | 58916864/169001437 [00:00<00:01, 109394592.19it/s] 42%|████▏     | 70483968/169001437 [00:00<00:00, 111425293.91it/s] 49%|████▊     | 82018304/169001437 [00:00<00:00, 112611265.99it/s] 55%|█████▌    | 93454336/169001437 [00:00<00:00, 113093235.99it/s] 62%|██████▏   | 105119744/169001437 [00:01<00:00, 114123639.56it/s] 69%|██████▉   | 116719616/169001437 [00:01<00:00, 114646092.23it/s] 76%|███████▌  | 128352256/169001437 [00:01<00:00, 115036468.92it/s] 83%|████████▎ | 140017664/169001437 [00:01<00:00, 115497733.25it/s] 90%|████████▉ | 151584768/169001437 [00:01<00:00, 115494475.33it/s] 97%|█████████▋| 163217408/169001437 [00:01<00:00, 115646028.95it/s]100%|██████████| 169001437/169001437 [00:01<00:00, 108818219.18it/s]Extracting ./cifar-100-python.tar.gz to ./
+Files already downloaded and verified
+
+Epoch [0], last_lr: 0.00007, train_loss: 4.1608, val_loss: 3.7144, val_acc: 0.1321, f1: 0.1321
+Epoch [1], last_lr: 0.00015, train_loss: 3.5268, val_loss: 3.3389, val_acc: 0.1958, f1: 0.1958
+Epoch [2], last_lr: 0.00028, train_loss: 3.1344, val_loss: 3.0279, val_acc: 0.2556, f1: 0.2556
+Epoch [3], last_lr: 0.00044, train_loss: 2.7804, val_loss: 2.6473, val_acc: 0.3234, f1: 0.3234
+Epoch [4], last_lr: 0.00060, train_loss: 2.4770, val_loss: 2.5441, val_acc: 0.3445, f1: 0.3445
+Epoch [5], last_lr: 0.00076, train_loss: 2.3098, val_loss: 2.3844, val_acc: 0.3680, f1: 0.3680
+Epoch [6], last_lr: 0.00089, train_loss: 2.1684, val_loss: 2.6334, val_acc: 0.3332, f1: 0.3332
+Epoch [7], last_lr: 0.00097, train_loss: 2.0874, val_loss: 2.4112, val_acc: 0.3564, f1: 0.3564
+Epoch [8], last_lr: 0.00100, train_loss: 2.0413, val_loss: 2.4047, val_acc: 0.3699, f1: 0.3699
+Epoch [9], last_lr: 0.00099, train_loss: 1.9841, val_loss: 2.2363, val_acc: 0.4118, f1: 0.4118
+Epoch [10], last_lr: 0.00098, train_loss: 1.9278, val_loss: 2.1252, val_acc: 0.4363, f1: 0.4363
+Epoch [11], last_lr: 0.00095, train_loss: 1.8687, val_loss: 2.1928, val_acc: 0.4144, f1: 0.4144
+Epoch [12], last_lr: 0.00091, train_loss: 1.8082, val_loss: 2.0467, val_acc: 0.4484, f1: 0.4484
+Epoch [13], last_lr: 0.00087, train_loss: 1.7337, val_loss: 1.8310, val_acc: 0.4921, f1: 0.4921
+Epoch [14], last_lr: 0.00081, train_loss: 1.6632, val_loss: 1.8280, val_acc: 0.4988, f1: 0.4988
+Epoch [15], last_lr: 0.00075, train_loss: 1.5809, val_loss: 1.7313, val_acc: 0.5188, f1: 0.5188
+Epoch [16], last_lr: 0.00068, train_loss: 1.4897, val_loss: 1.7052, val_acc: 0.5302, f1: 0.5302
+Epoch [17], last_lr: 0.00061, train_loss: 1.4223, val_loss: 1.5031, val_acc: 0.5770, f1: 0.5770
+Epoch [18], last_lr: 0.00054, train_loss: 1.3295, val_loss: 1.4370, val_acc: 0.5904, f1: 0.5904
+Epoch [19], last_lr: 0.00046, train_loss: 1.2480, val_loss: 1.3927, val_acc: 0.6065, f1: 0.6065
+Epoch [20], last_lr: 0.00039, train_loss: 1.1594, val_loss: 1.2646, val_acc: 0.6408, f1: 0.6408
+Epoch [21], last_lr: 0.00032, train_loss: 1.0633, val_loss: 1.1589, val_acc: 0.6575, f1: 0.6575
+Epoch [22], last_lr: 0.00025, train_loss: 0.9755, val_loss: 1.1116, val_acc: 0.6816, f1: 0.6816
+Epoch [23], last_lr: 0.00019, train_loss: 0.8779, val_loss: 1.0802, val_acc: 0.6900, f1: 0.6900
+Epoch [24], last_lr: 0.00013, train_loss: 0.7768, val_loss: 1.0306, val_acc: 0.7057, f1: 0.7057
+Epoch [25], last_lr: 0.00009, train_loss: 0.6953, val_loss: 0.9778, val_acc: 0.7172, f1: 0.7172
+Epoch [26], last_lr: 0.00005, train_loss: 0.6152, val_loss: 0.9466, val_acc: 0.7264, f1: 0.7264
+Epoch [27], last_lr: 0.00002, train_loss: 0.5540, val_loss: 0.9360, val_acc: 0.7292, f1: 0.7292
+Epoch [28], last_lr: 0.00001, train_loss: 0.5157, val_loss: 0.9241, val_acc: 0.7362, f1: 0.7362
+Epoch [29], last_lr: 0.00000, train_loss: 0.5022, val_loss: 0.9250, val_acc: 0.7354, f1: 0.7354
+Training time: 2072.76 s
