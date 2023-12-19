@@ -50,13 +50,13 @@ cd your-repo
 pip install -r requirements.txt
 
 # Execute baseline model training on CPU
-python baseline_model.py --device cpu
+python resnet50_100.py --device cpu
 
 # Execute baseline model training on GPU
-python baseline_model.py --device gpu
+python resnet50_100.py --device gpu
 
 # Execute optimized model training
-python optimized_model.py
+python resnet50_100_optimize.py
 
 # Additional commands for distributed training, profiling, and other optimizations
 # ...
