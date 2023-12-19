@@ -98,7 +98,7 @@ python resnet50_100.py
   - Data loading optimizations and mixed-precision training were particularly effective.
 
 - **Charts and Tables:**
-  - See the `results` directory for visualizations, charts, and tables generated during experiments.
+  - See the `ResNet50` and `XLNet` directories for visualizations, charts, and tables generated during experiments.
 
 For detailed analysis and additional insights, refer to the notebooks in the `notebooks` directory.
 
