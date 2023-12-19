@@ -1,0 +1,24 @@
+Some weights of XLNetForSequenceClassification were not initialized from the model checkpoint at xlnet-base-cased and are newly initialized: ['logits_proj.bias', 'sequence_summary.summary.weight', 'logits_proj.weight', 'sequence_summary.summary.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+Data loading time without optimization: 76.81269836425781 seconds
+Data Loading without Optimization time: 0.00016117095947265625 seconds
+Data Loading without Optimization memory usage: 0.0 MB
+Data loading time with 2 workers: 77.93609881401062 seconds
+Data Loading with 2 workers time: 0.0004017353057861328 seconds
+Data Loading with 2 workers memory usage: 0.0 MB
+Data loading time with 4 workers: 78.2155990600586 seconds
+Data Loading with 4 workers time: 0.00022983551025390625 seconds
+Data Loading with 4 workers memory usage: 0.0 MB
+Data loading time with 8 workers: 79.09605598449707 seconds
+Data Loading with 8 workers time: 0.00030517578125 seconds
+Data Loading with 8 workers memory usage: 0.0 MB
+Data loading time with 14 workers: 59.10017800331116 seconds
+Data Loading with 14 workers time: 0.00023102760314941406 seconds
+Data Loading with 14 workers memory usage: 0.0 MB
+Data loading time with 16 workers: 75.63083171844482 seconds
+Data Loading with 16 workers time: 0.00022530555725097656 seconds
+Data Loading with 16 workers memory usage: 0.0 MB
+Data loading time with 32 workers: 75.61151814460754 seconds
+Data Loading with 32 workers time: 0.0001742839813232422 seconds
+Data Loading with 32 workers memory usage: 0.0 MB
