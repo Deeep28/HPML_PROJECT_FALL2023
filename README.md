@@ -9,7 +9,7 @@ This project focuses on a comprehensive study and optimization of machine learni
 ## Project Milestones
 
 ### Milestone 1: Baseline Model Implementation
-- [x] Implement ResNet50 for image classification on CIFAR10, CIFAR100.
+- [x] Implement ResNet50 for image classification on CIFAR10, CIFAR100 and XLNet for Text Classification.
 - [x] Train the baseline model on CPU and GPU.
 - [x] Measure time and memory/I.O. usage during data pre-processing, loading, training, and inference.
 
@@ -26,9 +26,9 @@ This project focuses on a comprehensive study and optimization of machine learni
 
 ## Repository Structure
 
-- **datasets:** CIFAR10, CIFAR100, ImageNet, Amazon review 
+- **datasets:** CIFAR10 & CIFAR100 https://www.cs.toronto.edu/~kriz/cifar.html, ImageNet https://www.image-net.org/download.php, Amazon review https://www.kaggle.com/datasets/kritanjalijain/amazon-reviews 
 - **models:** Includes the implementation of ResNet50 and XLNet.
-- **notebooks:** Jupyter notebooks for data exploration, optimization experiments, and analysis.
+- **GPU:** All measurements were done on Nvidia v100 gpu with mixed precision.
 - **results:** Storage for logs, charts, and tables generated during experiments.
 
 ## Code Execution
@@ -62,7 +62,7 @@ python resnet50_100_optimize.py
 # ...
 
 ```
-###Example commands to execute the code
+### Example commands to execute the code
 
 ```bash
 #!/bin/bash
